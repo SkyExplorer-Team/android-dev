@@ -23,4 +23,7 @@
     <string name="your_nationality">Your Nationality</string>
     <string name="dateofbirth">Date of Birth</string>
     <string name="next">Next</string>
+    <string name="contact_detail">Contact Detail</string>
+    <string name="provide_us_with_your_most_recent_contact_information">Provide us with your most recent contact information.</string>
+    <string name="phone_number">Phone Number</string>
 </resources>

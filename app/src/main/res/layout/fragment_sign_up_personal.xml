@@ -24,7 +24,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/description"
+            android:id="@+id/tvDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -43,7 +43,7 @@
             android:text="@string/salutation"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="@id/tvPersonalInformation"
-            app:layout_constraintTop_toBottomOf="@id/description" />
+            app:layout_constraintTop_toBottomOf="@id/tvDescription" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/edtSalutation"
@@ -66,7 +66,7 @@
             android:id="@+id/tvFirstMiddleName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="20dp"
             android:fontFamily="@font/pjs_medium"
             android:text="@string/firstlastname"
             android:textSize="16sp"
@@ -108,7 +108,7 @@
             android:id="@+id/tvLastName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="20dp"
             android:fontFamily="@font/pjs_medium"
             android:text="@string/lastname"
             android:textSize="16sp"
@@ -138,7 +138,7 @@
             android:id="@+id/tvNationality"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="20dp"
             android:fontFamily="@font/pjs_medium"
             android:text="@string/nationality"
             android:textSize="16sp"
@@ -166,7 +166,7 @@
             android:id="@+id/tvDOB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="20dp"
             android:fontFamily="@font/pjs_medium"
             android:text="@string/dateofbirth"
             android:textSize="16sp"
