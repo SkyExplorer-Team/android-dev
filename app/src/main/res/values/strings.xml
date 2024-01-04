@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">SkyExplorer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="titleOnboarding1">Welcome to SkyExplorer</string>
+    <string name="descOnboarding1">Embark on a world of hassle-free travel planning, effortlessly at your fingertips, making journeys memorable</string>
+    <string name="next">Next</string>
+    <string name="titleOnboarding2">Book Your Journey</string>
+    <string name="descOnboarding2"><![CDATA[Unlock the world! Discover and choose your dream destinations effortlessly & making booking your ideal flight a breeze.]]></string>
+    <string name="titleOnboarding3">Your Gateway to the Skies!</string>
+    <string name="descOnboarding3">SkyExplorer ensures smooth, secure, and stress-free flight reservations, making your gateway unforgettable.</string>
+    <string name="getStarted">Get Started</string>
 </resources>
