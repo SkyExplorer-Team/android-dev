@@ -65,6 +65,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/pjs_regular"
             android:hint="@string/enter_email"
+            android:inputType="textEmailAddress"
             android:textSize="16sp" />
 
     </com.google.android.material.textfield.TextInputLayout>
