@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:padding="24dp"
-    tools:context=".presentation.ui.SignInActivity">
+    tools:context=".presentation.ui.signin.SignInFragment">
 
     <ImageButton
         android:id="@+id/btnBack"
@@ -150,5 +150,6 @@
         android:text="@string/sign_in"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@id/tvSignIn" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
