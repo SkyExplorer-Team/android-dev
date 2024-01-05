@@ -31,4 +31,7 @@
     <string name="edit">Edit</string>
     <string name="subscribe">Subscribe to newsletter to receive latest offer and promotion every month.</string>
     <string name="submit">Submit</string>
+    <string name="verify_code">Verify Code</string>
+    <string name="enter_the_verification_code_we_send_you_on">Enter the verification code we send you on</string>
+    <string name="verify">Verify</string>
 </resources>
