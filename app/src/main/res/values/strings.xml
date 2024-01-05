@@ -26,4 +26,9 @@
     <string name="contact_detail">Contact Detail</string>
     <string name="provide_us_with_your_most_recent_contact_information">Provide us with your most recent contact information.</string>
     <string name="phone_number">Phone Number</string>
+    <string name="double_check">Double Check</string>
+    <string name="almost_there_ensure_all_your_details_are_accurate_before_hitting_the_submit_button">Almost there! Ensure all your details are accurate before hitting the submit button.</string>
+    <string name="edit">Edit</string>
+    <string name="subscribe">Subscribe to newsletter to receive latest offer and promotion every month.</string>
+    <string name="submit">Submit</string>
 </resources>
