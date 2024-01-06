@@ -1,27 +1,20 @@
 <resources>
     <string name="app_name">SkyExplorer</string>
-    <string name="sign_in">Sign In</string>
-    <string name="sign_in_text">Ready to Fly? Sign in to access your account and manage your bookings.</string>
-    <string name="email">Email</string>
-    <string name="enter_email">Enter your Email</string>
-    <string name="password">Password</string>
-    <string name="enter_password">Enter your Password</string>
-    <string name="forgot_password">Forgot Password?</string>
-    <string name="havent_account">Don’t have an account?</string>
-    <string name="sign_up">Sign Up</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="imageDescription">imageDesc</string>
-    <string name="title_forgot_password">Forgot Password?</string>
-    <string name="subtitle_forgot_password">No worries,we\'ve got you covered!</string>
-    <string name="description_forgot_password">Enter your email address below, and we\'ll send you a link to reset your password.</string>
-    <string name="cta_send_instruction">Send Intructions</string>
-    <string name="title_verify_mail">Check Your Mail</string>
-    <string name="subtitle_verify_mail">Great! We\'ve sent a password reset link to your email, follow the step given.</string>
-    <string name="title_set_new_password">Create New Password</string>
-    <string name="subtitle_set_new_password">Create strong password to keep your information safe.</string>
-    <string name="confirm_password">Confirm your Password</string>
-    <string name="cta_save">save</string>
-    <string name="title_success_change_pass">Successful Password Reset!</string>
-    <string name="subtitle_success_change_pass">You\'re all set! Let\'s get you back in.</string>
+    <string name="titleOnboarding1">Welcome to SkyExplorer</string>
+    <string name="descOnboarding1">Embark on a world of hassle-free travel planning, effortlessly at your fingertips, making journeys memorable</string>
+    <string name="next">Next</string>
+    <string name="titleOnboarding2">Book Your Journey</string>
+    <string name="descOnboarding2"><![CDATA[Unlock the world! Discover and choose your dream destinations effortlessly & making booking your ideal flight a breeze.]]></string>
+    <string name="titleOnboarding3">Your Gateway to the Skies!</string>
+    <string name="descOnboarding3">SkyExplorer ensures smooth, secure, and stress-free flight reservations, making your gateway unforgettable.</string>
+    <string name="getStarted">Get Started</string>
+    <string name="tagline">Navigate the Skies, Booking Made Easy Let\'s Get You Ready to Fly!</string>
+    <string name="continueWithEmail">Continue with Email</string>
+    <string name="continueWithGoogle">Continue with Google</string>
+    <string name="continueGuest">Continue as a Guest</string>
+    <string name="haveAnAccount">Have an account already? </string>
+    <string name="signupLink">Signup</string>
+    <string name="policyAgreement">By continuing, you accept the Terms Of Use and Privacy Policy.</string>
 </resources>
