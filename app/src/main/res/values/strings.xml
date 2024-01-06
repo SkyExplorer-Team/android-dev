@@ -11,4 +11,17 @@
     <string name="sign_up">Sign Up</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="imageDescription">imageDesc</string>
+    <string name="title_forgot_password">Forgot Password?</string>
+    <string name="subtitle_forgot_password">No worries,we\'ve got you covered!</string>
+    <string name="description_forgot_password">Enter your email address below, and we\'ll send you a link to reset your password.</string>
+    <string name="cta_send_instruction">Send Intructions</string>
+    <string name="title_verify_mail">Check Your Mail</string>
+    <string name="subtitle_verify_mail">Great! We\'ve sent a password reset link to your email, follow the step given.</string>
+    <string name="title_set_new_password">Create New Password</string>
+    <string name="subtitle_set_new_password">Create strong password to keep your information safe.</string>
+    <string name="confirm_password">Confirm your Password</string>
+    <string name="cta_save">save</string>
+    <string name="title_success_change_pass">Successful Password Reset!</string>
+    <string name="subtitle_success_change_pass">You\'re all set! Let\'s get you back in.</string>
 </resources>
