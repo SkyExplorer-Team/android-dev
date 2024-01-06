@@ -62,7 +62,6 @@
             android:layout_marginEnd="24dp"
             android:layout_marginBottom="30dp"
             android:backgroundTint="@color/white"
-            android:drawableStart="@drawable/ic_launcher_background"
             android:fontFamily="@font/pjs_bold"
             android:text="@string/continueWithGoogle"
             android:textColor="@color/black"
@@ -71,13 +70,15 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/btnEmail"
-            app:strokeColor="@color/black" />
+            app:strokeColor="@color/neutral_100"
+            app:strokeWidth="1dp" />
 
         <View
             android:id="@+id/devider"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
             android:layout_marginEnd="24dp"
             android:background="@drawable/divider"
             app:layout_constraintEnd_toEndOf="parent"
