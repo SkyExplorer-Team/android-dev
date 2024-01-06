@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">#fff</item>
+        <item name="boxStrokeWidth">2dp</item>
+    </style>
+
+    <style name="TextInput" parent="Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxStrokeWidth">1dp</item>
+    </style>
+
+
+    <style name="ButtonStyle" parent="Widget.Material3.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="backgroundTint">@color/primary_500</item>
+        <item name="android:fontFamily">@font/pjs_bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="SecondaryButton" parent="Widget.Material3.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@color/neutral_300</item>
+        <item name="android:fontFamily">@font/pjs_bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="TertiaryButton" parent="Widget.Material3.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:textColor">@color/primary_500</item>
+        <item name="backgroundTint">@color/white</item>
+        <item name="android:fontFamily">@font/pjs_bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="strokeColor">@color/primary_500</item>
+    </style>
+
+</resources>
