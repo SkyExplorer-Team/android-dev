@@ -11,4 +11,10 @@
     <string name="descOnboarding3">SkyExplorer ensures smooth, secure, and stress-free flight reservations, making your gateway unforgettable.</string>
     <string name="getStarted">Get Started</string>
     <string name="tagline">Navigate the Skies, Booking Made Easy Let\'s Get You Ready to Fly!</string>
+    <string name="continueWithEmail">Continue with Email</string>
+    <string name="continueWithGoogle">Continue with Google</string>
+    <string name="continueGuest">Continue as a Guest</string>
+    <string name="haveAnAccount">Have an account already? </string>
+    <string name="signupLink">Signup</string>
+    <string name="policyAgreement">By continuing, you accept the Terms Of Use and Privacy Policy.</string>
 </resources>
