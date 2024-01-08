@@ -5,8 +5,65 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".presentation.ui.signup.SignUpContactFragment"
-    android:padding="24dp">
+    android:padding="24dp"
+    tools:context=".presentation.ui.signup.SignUpContactFragment">
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/circle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/active_circle1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnBack" />
+
+    <ImageView
+        android:id="@+id/circle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/active_circle2"
+        app:layout_constraintBottom_toBottomOf="@id/circle1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/circle1" />
+
+    <ImageView
+        android:id="@+id/circle3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/inactive_circle3"
+        app:layout_constraintBottom_toBottomOf="@id/circle1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/circle1" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="130dp"
+        android:layout_height="6dp"
+        android:background="@color/primary_500"
+        app:layout_constraintBottom_toBottomOf="@id/circle1"
+        app:layout_constraintEnd_toStartOf="@id/circle2"
+        app:layout_constraintStart_toEndOf="@id/circle1"
+        app:layout_constraintTop_toTopOf="@id/circle1" />
+
+    <View
+        android:id="@id/line"
+        android:layout_width="130dp"
+        android:layout_height="6dp"
+        android:background="@color/neutral_100"
+        app:layout_constraintBottom_toBottomOf="@id/circle1"
+        app:layout_constraintEnd_toStartOf="@id/circle3"
+        app:layout_constraintStart_toEndOf="@id/circle2"
+        app:layout_constraintTop_toTopOf="@id/circle1" />
 
     <TextView
         android:id="@+id/tvContactDetail"
@@ -15,8 +72,9 @@
         android:fontFamily="@font/pjs_semibold"
         android:text="@string/contact_detail"
         android:textSize="24sp"
+        android:layout_marginTop="34dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/circle1" />
 
     <TextView
         android:id="@+id/tvDescription"
