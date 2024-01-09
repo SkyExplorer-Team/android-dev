@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="24dp"
+    tools:context=".presentation.ui.auth.forgotPassword.ForgotEmailFragment">
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/imageDescription" />
+    <TextView
+        android:id="@+id/tvTitleForgotPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/pjs_semibold"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnBack"
+        android:text="@string/title_forgot_password"
+        />
+    <TextView
+        android:id="@+id/tvSubtitleForgotPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pjs_regular"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:textColor="@color/neutral_900"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/subtitle_forgot_password"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleForgotPass" />
+    <TextView
+        android:id="@+id/tvDescriptionForgotPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pjs_regular"
+        android:textColor="@color/neutral_500"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:text="@string/description_forgot_password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSubtitleForgotPass" />
+    <TextView
+        android:id="@+id/tvEmailForgotPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/pjs_medium"
+        android:text="@string/email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescriptionForgotPass"
+        android:textSize="16sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtEmailForgotPass"
+        style="@style/TextInput"
+        android:layout_marginTop="6dp"
+        android:theme="@style/TextInputLayoutStyle"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmailForgotPass">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pjs_regular"
+            android:hint="@string/enter_email"
+            android:inputType="textPassword"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnPrimaryButton"
+        style="@style/ButtonStyle"
+        android:text="@string/cta_send_instruction"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
