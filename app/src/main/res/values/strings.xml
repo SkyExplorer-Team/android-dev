@@ -41,4 +41,10 @@
     <string name="personal">Personal</string>
     <string name="contact">Contact</string>
     <string name="check">Check</string>
+    <string name="select_your_nationality">Select your nationality</string>
+    <string name="please_select_your_nationality">Please select your nationality from the options below for the personal information.</string>
+    <string name="select_your_country_code">Select your country code</string>
+    <string name="please_select_your_code">Please select your country code from the options below for the contact.</string>
+    <string name="didn_t_receive_code">Didn’t receive code?</string>
+    <string name="resend">Resend</string>
 </resources>
