@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:background="@drawable/bg_nationality_border"
+    android:padding="18dp">
+
+    <ImageView
+        android:id="@+id/ivNationality"
+        android:layout_width="25dp"
+        android:layout_height="18dp"
+        android:src="@drawable/indonesia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNationality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/pjs_medium"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/ivNationality"
+        app:layout_constraintStart_toEndOf="@id/ivNationality"
+        app:layout_constraintTop_toTopOf="@id/ivNationality"
+        tools:text="Indonesia" />
+
+    <com.google.android.material.radiobutton.MaterialRadioButton
+        android:id="@+id/rbNationality"
+        android:layout_width="27dp"
+        app:buttonTint="@color/neutral_300"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/ivNationality"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ivNationality" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
