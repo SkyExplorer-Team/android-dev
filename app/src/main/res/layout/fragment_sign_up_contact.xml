@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="24dp"
+    tools:context=".presentation.ui.signup.SignUpContactFragment">
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/circle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/active_circle1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnBack" />
+
+    <TextView
+        android:id="@+id/tvPersonal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/pjs_bold"
+        android:text="@string/personal"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/circle1"
+        app:layout_constraintStart_toStartOf="@id/circle1"
+        app:layout_constraintTop_toBottomOf="@id/circle1" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="105dp"
+        android:layout_height="6dp"
+        android:background="@color/primary_500"
+        app:layout_constraintBottom_toBottomOf="@id/circle1"
+        app:layout_constraintEnd_toStartOf="@id/circle2"
+        app:layout_constraintStart_toEndOf="@id/circle1"
+        app:layout_constraintTop_toTopOf="@id/circle1" />
+
+
+    <ImageView
+        android:id="@+id/circle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/active_circle2"
+        app:layout_constraintBottom_toBottomOf="@id/circle1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/circle1" />
+
+    <TextView
+        android:id="@+id/tvContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/pjs_bold"
+        android:text="@string/contact"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/circle2"
+        app:layout_constraintStart_toStartOf="@id/circle2"
+        app:layout_constraintTop_toBottomOf="@id/circle2" />
+
+    <View
+        android:id="@id/line"
+        android:layout_width="105dp"
+        android:layout_height="6dp"
+        android:background="@color/neutral_100"
+        app:layout_constraintBottom_toBottomOf="@id/circle1"
+        app:layout_constraintEnd_toStartOf="@id/circle3"
+        app:layout_constraintStart_toEndOf="@id/circle2"
+        app:layout_constraintTop_toTopOf="@id/circle1" />
+
+    <ImageView
+        android:id="@+id/circle3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/inactive_circle3"
+        app:layout_constraintBottom_toBottomOf="@id/circle1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/circle1" />
+
+    <TextView
+        android:id="@+id/tvCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/pjs_bold"
+        android:text="@string/check"
+        android:textColor="@color/neutral_400"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/circle3"
+        app:layout_constraintStart_toStartOf="@id/circle3"
+        app:layout_constraintTop_toBottomOf="@id/circle3" />
+
+    <TextView
+        android:id="@+id/tvContactDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pjs_semibold"
+        android:text="@string/contact_detail"
+        android:textSize="24sp"
+        android:layout_marginTop="34dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPersonal" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/pjs_regular"
+        android:text="@string/provide_us_with_your_most_recent_contact_information"
+        android:textColor="@color/neutral_500"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/tvContactDetail" />
+
+    <TextView
+        android:id="@+id/tvPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/pjs_medium"
+        android:text="@string/phone_number"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/tvContactDetail"
+        app:layout_constraintTop_toBottomOf="@id/tvDescription" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtFirstMiddleName"
+        style="@style/TextInput"
+        android:layout_marginTop="6dp"
+        app:boxStrokeErrorColor="@color/danger_500"
+        app:hintEnabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPhoneNumber">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputFirstMiddleName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pjs_regular"
+            android:hint="@string/phone_number"
+            android:textSize="16sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/pjs_medium"
+        android:text="@string/email"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/tvContactDetail"
+        app:layout_constraintTop_toBottomOf="@id/edtFirstMiddleName" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtEmail"
+        style="@style/TextInput"
+        android:layout_marginTop="6dp"
+        app:boxStrokeErrorColor="@color/danger_500"
+        app:hintEnabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvEmail">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pjs_regular"
+            android:hint="@string/enter_email"
+            android:inputType="textEmailAddress"
+            android:textSize="16sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSignIn"
+        style="@style/ButtonStyle"
+        android:text="@string/next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tvContactDetail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

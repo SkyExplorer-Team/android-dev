@@ -65,6 +65,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/pjs_regular"
             android:hint="@string/enter_email"
+            android:inputType="textEmailAddress"
             android:textSize="16sp" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -139,7 +140,6 @@
         android:text="@string/sign_up"
         android:textColor="@color/primary_500"
         android:textSize="16sp"
-
         app:layout_constraintBottom_toTopOf="@id/btnSignIn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/haventAcc" />

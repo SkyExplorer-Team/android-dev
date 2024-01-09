@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="24dp"
+    tools:context=".presentation.ui.signup.SignUpOtpFragment">
+
+    <TextView
+        android:id="@+id/tvVerify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pjs_semibold"
+        android:text="@string/verify_code"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/pjs_regular"
+        android:text="@string/enter_the_verification_code_we_send_you_on"
+        android:textColor="@color/neutral_500"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/tvVerify"
+        app:layout_constraintTop_toBottomOf="@id/tvVerify" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pjs_regular"
+        android:textColor="@color/neutral_800"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/tvVerify"
+        app:layout_constraintTop_toBottomOf="@id/tvDescription"
+        tools:text="awildanfatahillah@gmail.com" />
+
+    <com.mukeshsolanki.OtpView
+        android:id="@+id/otpView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/pjs_medium"
+        android:inputType="text"
+        android:itemBackground="@drawable/bg_nationality_border"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:OtpHideLineWhenFilled="true"
+        app:OtpItemCount="5"
+        app:OtpItemSpacing="20dp"
+        app:OtpState_filled="true"
+        app:OtpViewType="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email" />
+
+    <TextView
+        android:id="@+id/tvReceive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="@font/pjs_regular"
+        android:text="@string/didn_t_receive_code"
+        android:textColor="@color/neutral_500"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/resend"
+        app:layout_constraintEnd_toStartOf="@id/resend"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/resend" />
+
+    <TextView
+        android:id="@+id/resend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:fontFamily="@font/pjs_bold"
+        android:text="@string/resend"
+        android:textColor="@color/primary_500"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvReceive"
+        app:layout_constraintTop_toBottomOf="@id/otpView" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:fontFamily="@font/pjs_semibold"
+        android:textColor="@color/primary_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/resend"
+        tools:text="00:59" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSignIn"
+        style="@style/ButtonStyle"
+        android:text="@string/verify"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tvVerify" />
+</androidx.constraintlayout.widget.ConstraintLayout>
