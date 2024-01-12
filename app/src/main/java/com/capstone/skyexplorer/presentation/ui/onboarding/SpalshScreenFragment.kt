@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.capstone.skyexplorer.R
 
 class SpalshScreenFragment : Fragment() {
@@ -13,7 +14,6 @@ class SpalshScreenFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         moveToAnotherFragment()
         return inflater.inflate(R.layout.fragment_spalsh_screen, container, false)
     }
@@ -21,14 +21,14 @@ class SpalshScreenFragment : Fragment() {
     private fun  moveToAnotherFragment(){
         Handler().postDelayed({
             if (checkOnboardingFinished()){
-                //
+                findNavController().navigate(R.id.action_spalshScreenFragment_to_mainOnboardingFragment)
             }else {
-
+                findNavController().navigate(R.id.action_spalshScreenFragment_to_signinMethodFragment)
             }
         }, 3000)
     }
     private fun checkOnboardingFinished(): Boolean {
-        return false
+        return true
     }
 
 }
