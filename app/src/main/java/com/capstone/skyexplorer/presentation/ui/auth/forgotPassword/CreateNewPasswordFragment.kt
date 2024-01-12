@@ -5,18 +5,28 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.capstone.skyexplorer.R
-
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+import com.capstone.skyexplorer.databinding.FragmentCreateNewPasswordBinding
+import com.capstone.skyexplorer.databinding.FragmentVerifyForgotPasswordBinding
 class CreateNewPasswordFragment : Fragment() {
 
+    private var _binding: FragmentCreateNewPasswordBinding? = null
+    private val binding get() = _binding!!
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_create_new_password, container, false)
+    ): View {
+        _binding =  FragmentCreateNewPasswordBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.apply {
+            btnPrimaryButton.setOnClickListener {
+                findNavController().navigate(R.id.action_setPasswordFragment_to_changePasswordSuccess)
+            }
+        }
+    }
 }
