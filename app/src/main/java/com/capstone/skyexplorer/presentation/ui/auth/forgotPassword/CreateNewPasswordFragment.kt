@@ -25,7 +25,7 @@ class CreateNewPasswordFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.apply {
             btnPrimaryButton.setOnClickListener {
-                findNavController().navigate(R.id.action_setPasswordFragment_to_changePasswordSuccess)
+                findNavController().navigate(R.id.action_createNewPasswordFragment_to_changePasswordSuccess)
             }
         }
     }
