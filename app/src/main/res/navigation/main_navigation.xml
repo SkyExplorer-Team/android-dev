@@ -11,38 +11,11 @@
         android:label="fragment_spalsh_screen"
         tools:layout="@layout/fragment_spalsh_screen" >
         <action
-            android:id="@+id/action_spalshScreenFragment_to_firstOnboardingFragment"
-            app:destination="@id/firstOnboardingFragment" />
-        <action
             android:id="@+id/action_spalshScreenFragment_to_signinMethodFragment"
             app:destination="@id/signinMethodFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/firstOnboardingFragment"
-        android:name="com.capstone.skyexplorer.presentation.ui.onboarding.FirstOnboardingFragment"
-        android:label="fragment_first_onboarding"
-        tools:layout="@layout/fragment_first_onboarding" >
         <action
-            android:id="@+id/action_firstOnboardingFragment_to_secondOnboardingFragment"
-            app:destination="@id/secondOnboardingFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/secondOnboardingFragment"
-        android:name="com.capstone.skyexplorer.presentation.ui.onboarding.SecondOnboardingFragment"
-        android:label="fragment_second_onboarding"
-        tools:layout="@layout/fragment_second_onboarding" >
-        <action
-            android:id="@+id/action_secondOnboardingFragment_to_thirdOnboardingFragment"
-            app:destination="@id/thirdOnboardingFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/thirdOnboardingFragment"
-        android:name="com.capstone.skyexplorer.presentation.ui.onboarding.ThirdOnboardingFragment"
-        android:label="fragment_third_onboarding"
-        tools:layout="@layout/fragment_third_onboarding" >
-        <action
-            android:id="@+id/action_thirdOnboardingFragment_to_signinMethodFragment"
-            app:destination="@id/signinMethodFragment" />
+            android:id="@+id/action_spalshScreenFragment_to_mainOnboardingFragment"
+            app:destination="@id/mainOnboardingFragment" />
     </fragment>
     <fragment
         android:id="@+id/signinMethodFragment"
@@ -137,5 +110,14 @@
         <action
             android:id="@+id/action_verifyForgotPassword_to_setPasswordFragment"
             app:destination="@id/setPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainOnboardingFragment"
+        android:name="com.capstone.skyexplorer.presentation.ui.onboarding.MainOnboardingFragment"
+        android:label="fragment_main_onboarding"
+        tools:layout="@layout/fragment_main_onboarding" >
+        <action
+            android:id="@+id/action_mainOnboardingFragment_to_signinMethodFragment"
+            app:destination="@id/signinMethodFragment" />
     </fragment>
 </navigation>
