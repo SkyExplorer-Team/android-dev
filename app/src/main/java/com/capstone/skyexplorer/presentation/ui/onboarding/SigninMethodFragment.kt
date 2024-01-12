@@ -5,16 +5,32 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.capstone.skyexplorer.R
+import com.capstone.skyexplorer.databinding.FragmentSigninMethodBinding
 
 class SigninMethodFragment : Fragment() {
+    private var _binding: FragmentSigninMethodBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_signin_method, container, false)
+    ): View {
+        _binding = FragmentSigninMethodBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.apply {
+            btnEmail.setOnClickListener {
+                findNavController().navigate(R.id.action_signinMethodFragment_to_signInFragment)
+            }
+            tvSignUp.setOnClickListener {
+                findNavController().navigate(R.id.action_signinMethodFragment_to_signUpPersonalFragment)
+            }
+        }
     }
 
 }

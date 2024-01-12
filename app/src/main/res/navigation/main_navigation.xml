@@ -60,12 +60,20 @@
         android:id="@+id/changePasswordSuccess"
         android:name="com.capstone.skyexplorer.presentation.ui.auth.forgotPassword.ChangePasswordSuccess"
         android:label="fragment_change_password_success"
-        tools:layout="@layout/fragment_change_password_success" />
+        tools:layout="@layout/fragment_change_password_success" >
+        <action
+            android:id="@+id/action_changePasswordSuccess_to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
     <fragment
         android:id="@+id/createNewPasswordFragment"
         android:name="com.capstone.skyexplorer.presentation.ui.auth.forgotPassword.CreateNewPasswordFragment"
         android:label="fragment_create_new_password"
-        tools:layout="@layout/fragment_create_new_password" />
+        tools:layout="@layout/fragment_create_new_password" >
+        <action
+            android:id="@+id/action_createNewPasswordFragment_to_changePasswordSuccess"
+            app:destination="@id/changePasswordSuccess" />
+    </fragment>
     <fragment
         android:id="@+id/forgotEmailFragment"
         android:name="com.capstone.skyexplorer.presentation.ui.auth.forgotPassword.ForgotEmailFragment"
@@ -85,22 +93,13 @@
             app:destination="@id/signUpOtpFragment" />
     </fragment>
     <fragment
-        android:id="@+id/setPasswordFragment"
-        android:name="com.capstone.skyexplorer.presentation.ui.signup.SetPasswordFragment"
-        android:label="fragment_set_password"
-        tools:layout="@layout/fragment_set_password" >
-        <action
-            android:id="@+id/action_setPasswordFragment_to_changePasswordSuccess"
-            app:destination="@id/changePasswordSuccess" />
-    </fragment>
-    <fragment
         android:id="@+id/signUpOtpFragment"
         android:name="com.capstone.skyexplorer.presentation.ui.signup.SignUpOtpFragment"
         android:label="fragment_sign_up_otp"
         tools:layout="@layout/fragment_sign_up_otp" >
         <action
-            android:id="@+id/action_signUpOtpFragment_to_createNewPasswordFragment"
-            app:destination="@id/createNewPasswordFragment" />
+            android:id="@+id/action_signUpOtpFragment_to_setPasswordFragment"
+            app:destination="@id/setPasswordFragment" />
     </fragment>
     <fragment
         android:id="@+id/verifyForgotPassword"
@@ -108,8 +107,8 @@
         android:label="fragment_verify_forgot_password"
         tools:layout="@layout/fragment_verify_forgot_password" >
         <action
-            android:id="@+id/action_verifyForgotPassword_to_setPasswordFragment"
-            app:destination="@id/setPasswordFragment" />
+            android:id="@+id/action_verifyForgotPassword_to_createNewPasswordFragment"
+            app:destination="@id/createNewPasswordFragment" />
     </fragment>
     <fragment
         android:id="@+id/mainOnboardingFragment"
@@ -120,4 +119,9 @@
             android:id="@+id/action_mainOnboardingFragment_to_signinMethodFragment"
             app:destination="@id/signinMethodFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/setPasswordFragment"
+        android:name="com.capstone.skyexplorer.presentation.ui.signup.SetPasswordFragment"
+        android:label="fragment_set_password"
+        tools:layout="@layout/fragment_set_password" />
 </navigation>
