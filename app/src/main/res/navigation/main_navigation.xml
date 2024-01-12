@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/spalshScreenFragment">
+
+    <fragment
+        android:id="@+id/spalshScreenFragment"
+        android:name="com.capstone.skyexplorer.presentation.ui.onboarding.SpalshScreenFragment"
+        android:label="fragment_spalsh_screen"
+        tools:layout="@layout/fragment_spalsh_screen" >
+        <action
+            android:id="@+id/action_spalshScreenFragment_to_firstOnboardingFragment"
+            app:destination="@id/firstOnboardingFragment" />
+        <action
+            android:id="@+id/action_spalshScreenFragment_to_signinMethodFragment"
+            app:destination="@id/signinMethodFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/firstOnboardingFragment"
+        android:name="com.capstone.skyexplorer.presentation.ui.onboarding.FirstOnboardingFragment"
+        android:label="fragment_first_onboarding"
+        tools:layout="@layout/fragment_first_onboarding" >
+        <action
+            android:id="@+id/action_firstOnboardingFragment_to_secondOnboardingFragment"
+            app:destination="@id/secondOnboardingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondOnboardingFragment"
+        android:name="com.capstone.skyexplorer.presentation.ui.onboarding.SecondOnboardingFragment"
+        android:label="fragment_second_onboarding"
+        tools:layout="@layout/fragment_second_onboarding" >
+        <action
+            android:id="@+id/action_secondOnboardingFragment_to_thirdOnboardingFragment"
+            app:destination="@id/thirdOnboardingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdOnboardingFragment"
+        android:name="com.capstone.skyexplorer.presentation.ui.onboarding.ThirdOnboardingFragment"
+        android:label="fragment_third_onboarding"
+        tools:layout="@layout/fragment_third_onboarding" >
+        <action
+            android:id="@+id/action_thirdOnboardingFragment_to_signinMethodFragment"
+            app:destination="@id/signinMethodFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signinMethodFragment"
+        android:name="com.capstone.skyexplorer.presentation.ui.onboarding.SigninMethodFragment"
+        android:label="fragment_signin_method"
+        tools:layout="@layout/fragment_signin_method" >
+        <action
+            android:id="@+id/action_signinMethodFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+        <action
+            android:id="@+id/action_signinMethodFragment_to_signUpPersonalFragment"
+            app:destination="@id/signUpPersonalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.capstone.skyexplorer.presentation.ui.signin.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signInFragment_to_forgotEmailFragment"
+            app:destination="@id/forgotEmailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpPersonalFragment"
+        android:name="com.capstone.skyexplorer.presentation.ui.signup.SignUpPersonalFragment"
+        android:label="fragment_sign_up_personal"
+        tools:layout="@layout/fragment_sign_up_personal" >
+        <action
+            android:id="@+id/action_signUpPersonalFragment_to_signUpContactFragment"
+            app:destination="@id/signUpContactFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpContactFragment"
+        android:name="com.capstone.skyexplorer.presentation.ui.signup.SignUpContactFragment"
+        android:label="fragment_sign_up_contact"
+        tools:layout="@layout/fragment_sign_up_contact" >
+        <action
+            android:id="@+id/action_signUpContactFragment_to_signUpCheckFragment"
+            app:destination="@id/signUpCheckFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/changePasswordSuccess"
+        android:name="com.capstone.skyexplorer.presentation.ui.auth.forgotPassword.ChangePasswordSuccess"
+        android:label="fragment_change_password_success"
+        tools:layout="@layout/fragment_change_password_success" />
+    <fragment
+        android:id="@+id/createNewPasswordFragment"
+        android:name="com.capstone.skyexplorer.presentation.ui.auth.forgotPassword.CreateNewPasswordFragment"
+        android:label="fragment_create_new_password"
+        tools:layout="@layout/fragment_create_new_password" />
+    <fragment
+        android:id="@+id/forgotEmailFragment"
+        android:name="com.capstone.skyexplorer.presentation.ui.auth.forgotPassword.ForgotEmailFragment"
+        android:label="fragment_forgot_email"
+        tools:layout="@layout/fragment_forgot_email" >
+        <action
+            android:id="@+id/action_forgotEmailFragment_to_verifyForgotPassword"
+            app:destination="@id/verifyForgotPassword" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpCheckFragment"
+        android:name="com.capstone.skyexplorer.presentation.ui.signup.SignUpCheckFragment"
+        android:label="fragment_sign_up_check"
+        tools:layout="@layout/fragment_sign_up_check" >
+        <action
+            android:id="@+id/action_signUpCheckFragment_to_signUpOtpFragment"
+            app:destination="@id/signUpOtpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/setPasswordFragment"
+        android:name="com.capstone.skyexplorer.presentation.ui.signup.SetPasswordFragment"
+        android:label="fragment_set_password"
+        tools:layout="@layout/fragment_set_password" >
+        <action
+            android:id="@+id/action_setPasswordFragment_to_changePasswordSuccess"
+            app:destination="@id/changePasswordSuccess" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpOtpFragment"
+        android:name="com.capstone.skyexplorer.presentation.ui.signup.SignUpOtpFragment"
+        android:label="fragment_sign_up_otp"
+        tools:layout="@layout/fragment_sign_up_otp" >
+        <action
+            android:id="@+id/action_signUpOtpFragment_to_createNewPasswordFragment"
+            app:destination="@id/createNewPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/verifyForgotPassword"
+        android:name="com.capstone.skyexplorer.presentation.ui.auth.forgotPassword.VerifyForgotPassword"
+        android:label="fragment_verify_forgot_password"
+        tools:layout="@layout/fragment_verify_forgot_password" >
+        <action
+            android:id="@+id/action_verifyForgotPassword_to_setPasswordFragment"
+            app:destination="@id/setPasswordFragment" />
+    </fragment>
+</navigation>
