@@ -1,4 +1,4 @@
-package com.capstone.skyexplorer.presentation.ui.auth.forgotPassword
+package com.capstone.skyexplorer.presentation.ui.forgotPassword
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,19 +7,17 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.capstone.skyexplorer.R
-import com.capstone.skyexplorer.databinding.FragmentChangePasswordSuccessBinding
 import com.capstone.skyexplorer.databinding.FragmentCreateNewPasswordBinding
+import com.capstone.skyexplorer.databinding.FragmentVerifyForgotPasswordBinding
+class CreateNewPasswordFragment : Fragment() {
 
-
-class ChangePasswordSuccess : Fragment() {
-
-    private var _binding: FragmentChangePasswordSuccessBinding? = null
+    private var _binding: FragmentCreateNewPasswordBinding? = null
     private val binding get() = _binding!!
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding =   FragmentChangePasswordSuccessBinding.inflate(inflater, container, false)
+        _binding =  FragmentCreateNewPasswordBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -27,9 +25,8 @@ class ChangePasswordSuccess : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.apply {
             btnPrimaryButton.setOnClickListener {
-                findNavController().navigate(R.id.action_changePasswordSuccess_to_signInFragment)
+                findNavController().navigate(R.id.action_createNewPasswordFragment_to_changePasswordSuccess)
             }
         }
     }
-
 }

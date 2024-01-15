@@ -58,7 +58,7 @@
     </fragment>
     <fragment
         android:id="@+id/changePasswordSuccess"
-        android:name="com.capstone.skyexplorer.presentation.ui.auth.forgotPassword.ChangePasswordSuccess"
+        android:name="com.capstone.skyexplorer.presentation.ui.forgotPassword.ChangePasswordSuccess"
         android:label="fragment_change_password_success"
         tools:layout="@layout/fragment_change_password_success" >
         <action
@@ -67,7 +67,7 @@
     </fragment>
     <fragment
         android:id="@+id/createNewPasswordFragment"
-        android:name="com.capstone.skyexplorer.presentation.ui.auth.forgotPassword.CreateNewPasswordFragment"
+        android:name="com.capstone.skyexplorer.presentation.ui.forgotPassword.CreateNewPasswordFragment"
         android:label="fragment_create_new_password"
         tools:layout="@layout/fragment_create_new_password" >
         <action
@@ -76,7 +76,7 @@
     </fragment>
     <fragment
         android:id="@+id/forgotEmailFragment"
-        android:name="com.capstone.skyexplorer.presentation.ui.auth.forgotPassword.ForgotEmailFragment"
+        android:name="com.capstone.skyexplorer.presentation.ui.forgotPassword.ForgotEmailFragment"
         android:label="fragment_forgot_email"
         tools:layout="@layout/fragment_forgot_email" >
         <action
@@ -103,7 +103,7 @@
     </fragment>
     <fragment
         android:id="@+id/verifyForgotPassword"
-        android:name="com.capstone.skyexplorer.presentation.ui.auth.forgotPassword.VerifyForgotPassword"
+        android:name="com.capstone.skyexplorer.presentation.ui.forgotPassword.VerifyForgotPassword"
         android:label="fragment_verify_forgot_password"
         tools:layout="@layout/fragment_verify_forgot_password" >
         <action
