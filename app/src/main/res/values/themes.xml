@@ -6,8 +6,9 @@
         <item name="colorPrimary">@color/primary_500</item>
         <item name="colorPrimaryVariant">@color/primary_700</item>
         <item name="colorOnPrimary">@color/white</item>
+        <item name="android:windowBackground">@android:color/white</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
     </style>
 
     <style name="Theme.SkyExplorer" parent="Base.Theme.SkyExplorer" />
