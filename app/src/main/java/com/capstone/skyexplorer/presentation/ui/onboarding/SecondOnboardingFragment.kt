@@ -25,7 +25,7 @@ class SecondOnboardingFragment : Fragment() {
     private fun slideToNextFragment(){
         val onboardingViewpagerContainer = activity?.findViewById<ViewPager2>(R.id.onBoardingContainer)
         binding.btnNext.setOnClickListener {
-            onboardingViewpagerContainer?.currentItem = 1
+            onboardingViewpagerContainer?.currentItem = 2
         }
     }
 

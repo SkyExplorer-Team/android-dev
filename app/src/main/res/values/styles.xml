@@ -25,6 +25,7 @@
         <item name="boxCornerRadiusTopEnd">12dp</item>
         <item name="boxCornerRadiusTopStart">12dp</item>
         <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeColor">@color/edit_text</item>
     </style>
 
 

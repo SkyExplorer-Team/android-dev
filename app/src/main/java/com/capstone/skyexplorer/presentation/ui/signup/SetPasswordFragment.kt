@@ -33,6 +33,9 @@ class SetPasswordFragment : Fragment() {
             btnSignIn.setOnClickListener {
 
             }
+            btnBack.setOnClickListener {
+                findNavController().popBackStack()
+            }
         }
     }
 }

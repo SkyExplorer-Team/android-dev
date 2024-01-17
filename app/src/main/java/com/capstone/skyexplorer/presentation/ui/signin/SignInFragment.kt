@@ -33,6 +33,9 @@ class SignInFragment : Fragment() {
                     R.id.action_signInFragment_to_forgotEmailFragment
                 )
             }
+            btnBack.setOnClickListener {
+                findNavController().popBackStack()
+            }
         }
     }
 }

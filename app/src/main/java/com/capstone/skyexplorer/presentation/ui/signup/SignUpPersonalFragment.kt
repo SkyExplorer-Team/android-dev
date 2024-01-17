@@ -29,6 +29,9 @@ class SignUpPersonalFragment : Fragment() {
             btnNext.setOnClickListener {
                 findNavController().navigate(R.id.action_signUpPersonalFragment_to_signUpContactFragment)
             }
+            btnBack.setOnClickListener {
+                findNavController().popBackStack()
+            }
         }
     }
 }
