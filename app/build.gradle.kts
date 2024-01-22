@@ -15,7 +15,7 @@ android {
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
-        buildConfigField("String", "BASE_API_URL", "\"https://be-java-production.up.railway.app\"")
+        buildConfigField("String", "BASE_API_URL", "\"https://be-java-production.up.railway.app/api/\"")
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
     }
@@ -70,7 +70,7 @@ dependencies {
     implementation("androidx.datastore:datastore-preferences:1.0.0")
     //Dagger Hilt
     implementation("com.google.dagger:hilt-android:$daggerHiltVersion")
-    annotationProcessor("com.google.dagger:hilt-android-compiler:$daggerHiltVersion")
+    kapt("com.google.dagger:hilt-android-compiler:$daggerHiltVersion")
     //Chucker
     debugImplementation("com.github.chuckerteam.chucker:library:4.0.0")
     releaseImplementation("com.github.chuckerteam.chucker:library-no-op:4.0.0")
