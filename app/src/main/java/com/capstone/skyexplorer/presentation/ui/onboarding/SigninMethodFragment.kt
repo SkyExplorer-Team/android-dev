@@ -25,10 +25,10 @@ class SigninMethodFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.apply {
             btnEmail.setOnClickListener {
-                findNavController().navigate(R.id.action_signinMethodFragment_to_signInFragment)
-            }
-            tvSignUp.setOnClickListener {
                 findNavController().navigate(R.id.action_signinMethodFragment_to_signUpPersonalFragment)
+            }
+            tvSignIn.setOnClickListener {
+                findNavController().navigate(R.id.action_signinMethodFragment_to_signInFragment)
             }
         }
     }
