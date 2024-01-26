@@ -12,7 +12,12 @@ import com.capstone.skyexplorer.R
 import com.capstone.skyexplorer.databinding.FragmentSignInBinding
 import com.capstone.skyexplorer.model.auth.login.LoginResponse
 import com.capstone.skyexplorer.model.auth.login.PostLoginModel
+import com.capstone.skyexplorer.utils.Validator
 import com.capstone.skyexplorer.utils.Validator.emailValidator
+import com.capstone.skyexplorer.utils.Validator.enableButtonOnValidation
+import com.capstone.skyexplorer.utils.Validator.isValidEmail
+import com.capstone.skyexplorer.utils.Validator.isValidMinLength
+import com.capstone.skyexplorer.utils.Validator.passwordValidator
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
@@ -33,19 +38,29 @@ class SignInFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         lifecycleScope.launch {
             viewModel.state.collect { uiState ->
-                loadingStateIsToggled(uiState.isLoading)
-                errorStateIsToggled(uiState.isError)
-                uiState.loginResult?.let { successStateIsToggled(it) }
+                updateUi(uiState)
             }
         }
         binding.apply {
+            btnSignIn.isEnabled = false
             btnBack.setOnClickListener{
                 findNavController().popBackStack()
             }
             // Disable error Icon
             edtEmail.errorIconDrawable = null
-            // Email Validator
+            edtPassword.errorIconDrawable = null
+
+            // Email Validator && password Validator
             inputEmail.emailValidator(edtEmail)
+            inputPassword.passwordValidator(edtPassword)
+
+            // enable button
+            val validationPairs = listOf(
+                Validator.ValidationPair(inputEmail, ::isValidEmail),
+                Validator.ValidationPair(inputPassword) { isValidMinLength(it, 6) }
+            )
+            enableButtonOnValidation(btnSignIn, validationPairs)
+
             btnSignIn.setOnClickListener {
                 viewModel.login(
                     PostLoginModel(email = inputEmail.text.toString(), password = inputPassword.text.toString())
@@ -58,13 +73,18 @@ class SignInFragment : Fragment() {
             }
         }
     }
-    private fun loadingStateIsToggled(isLoading : Boolean){
-
-    }
-    private fun errorStateIsToggled(isError : Boolean){
-
-    }
-    private fun successStateIsToggled(loginResult : LoginResponse){
-
+    private fun updateUi(uiState: LoginUiState) {
+        if (uiState.isLoading) {
+            binding.btnSignIn.visibility = View.GONE
+            binding.loadingState.visibility = View.VISIBLE
+        }else{
+            binding.btnSignIn.visibility = View.VISIBLE
+            binding.loadingState.visibility = View.GONE
+        }
+        uiState.loginResult?.let { loginResult ->
+        }
+        uiState.apiError?.let { authError ->
+            binding.edtPassword.error = authError.message
+        }
     }
 }
