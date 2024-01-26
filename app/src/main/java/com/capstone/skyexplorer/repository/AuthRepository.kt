@@ -1,5 +1,6 @@
 package com.capstone.skyexplorer.repository
 
+import android.util.Log
 import com.capstone.skyexplorer.model.auth.login.LoginResponse
 import com.capstone.skyexplorer.model.auth.login.PostLoginModel
 import com.capstone.skyexplorer.pref.ApplicationPreferences
@@ -16,7 +17,7 @@ class AuthRepository @Inject constructor(
 ) {
     suspend fun login(data : PostLoginModel): Flow<Result<LoginResponse>> = flow {
         try {
-            val response = authApiService.login(email = data.email, password = data.password)
+            val response = authApiService.login(loginData = data)
             emit(Result.success(response))
         } catch (e: Exception) {
             e.printStackTrace()
